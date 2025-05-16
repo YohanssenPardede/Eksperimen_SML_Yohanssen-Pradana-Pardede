@@ -1,0 +1,34 @@
+name: Preprocessing AQI Data
+
+on:
+  push:
+    paths:
+      - 'Eksperimen_SML_Yohanssen Pradana Pardede/**'
+  workflow_dispatch:
+
+jobs:
+  preprocess:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12.7'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run preprocessing script
+      run: |
+        python "Eksperimen_SML_Yohanssen Pradana Pardede/preprocessing/automate_Yohanssen Pradana Pardede.py"
+
+    - name: Upload processed data
+      uses: actions/upload-artifact@v4
+      with:
+        name: processed-dataset
+        path: Eksperimen_SML_Yohanssen Pradana Pardede/preprocessing/aqi_preprocessing.csv
