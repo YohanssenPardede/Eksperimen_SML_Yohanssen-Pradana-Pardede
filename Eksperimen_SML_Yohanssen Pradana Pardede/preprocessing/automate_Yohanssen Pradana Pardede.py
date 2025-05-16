@@ -69,4 +69,4 @@ if __name__ == "__main__":
     # Simpan data hasil preprocessing (sebelum scaling dan split) ke CSV
     output_path = os.path.join(script_dir, "aqi_preprocessing.csv")
     df_encoded.to_csv(output_path, index=False)
-    print(f"File hasil preprocessing telah disimpan pada file {output_path}")
+    print(f"File hasil preprocessing telah disimpan pada {output_path}")
