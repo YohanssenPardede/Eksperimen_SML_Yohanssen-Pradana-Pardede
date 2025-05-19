@@ -3,7 +3,7 @@ name: Preprocessing AQI Data
 on:
   push:
     paths:
-      - 'Eksperimen_SML_Yohanssen Pradana Pardede/**'
+      - 'preprocessing/**'
   workflow_dispatch:
 
 jobs:
@@ -31,4 +31,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: processed-dataset
-        path: Eksperimen_SML_Yohanssen Pradana Pardede/preprocessing/aqi_preprocessing.csv
+        path: preprocessing/aqi_preprocessing.csv
