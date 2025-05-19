@@ -52,7 +52,6 @@ def preprocess_aqi_data(df):
 
 if __name__ == "__main__":
     # Baca data
-    # Mendapatkan direktori tempat skrip saat ini berada
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
     # Membuat path ke direktori parent
