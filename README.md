@@ -4,7 +4,6 @@ Proyek ini bertujuan untuk melakukan preprocessing dataset *Air Quality Index (A
 ## 📁 Struktur Direktori
 ```
 Eksperimen_SML_Yohanssen-Pradana-Pardede/
-│
 ├── aqi_raw.csv 
 ├── requirements.txt             
 ├── preprocessing/
